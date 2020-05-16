@@ -7,16 +7,16 @@ $(document).ready(function(){
     $(".login-form").show();
     $(".signup").css("background", "none");
     $(".login").css("background", "#fff");
-  });
+    });
 
   $(".signup").click(function () {
     $(".signup-form").show();
     $(".login-form").hide();
     $(".login").css("background", "none");
     $(".signup").css("background", "#fff");
-  });
+    });
 
   $(".btn").click(function () {
     $(".input").val("");
-  });
+    });
 }); 
