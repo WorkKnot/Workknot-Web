@@ -10,8 +10,8 @@ body {
 }
 
 .logo {
-  width:5%;
-  height:5%;
+  width: 5%;
+  height: 5%;
 }
 
 .navbar-brand {
@@ -21,7 +21,7 @@ body {
 }
 
 .nav-item {
-  padding: 0 0.5rem ;
+  padding: 0 0.5rem;
 }
 
 .nav-link {
@@ -29,41 +29,41 @@ body {
   font-family: "Monserrat-Light"
 }
 
-/* .nav-link:hover {
+.nav-item:hover {
   background-color: #ffca2b;
-} */
+}
 
-.background-image{
-  height:200rem;
+.background-image {
+  height: 200rem;
 }
 
 
 /* About Us Quote section */
-#quote{
-  text-align:center;
-  margin:0 0 3%;
+#quote {
+  text-align: center;
+  margin: 0 0 3%;
 }
 
-.background-image{
-  opacity:0.5;
-  left:0;
-  width:100%;
-  height:45rem;
-  z-index:-1;
+.background-image {
+  opacity: 0.5;
+  left: 0;
+  width: 100%;
+  height: 45rem;
+  z-index: -1;
 }
 
- #quote .container-fluid{
-    padding: 5% 15%;
+#quote .container-fluid {
+  padding: 5% 15%;
 }
 
-.container-fluid h2{
-  font-size:5rem;
+.container-fluid h2 {
+  font-size: 5rem;
   font-weight: bold;
-  padding:4% 0 1%;
+  padding: 2% 0 1%;
 }
 
-.container-fluid p{
-  font-size:2rem;
+.container-fluid p {
+  font-size: 2rem;
   line-height: 1.75;
 }
 
@@ -71,39 +71,39 @@ body {
 
 /* Team carousel */
 
-.team-main-text{
-  margin:2% 10% 4%;
+.team-main-text {
+  margin: 2% 10% 4%;
 }
 
-.user_image{
-  margin:auto;
-  height:50%;
-  width:10rem;
+.user_image {
+  margin: auto;
+  height: 50%;
+  width: 10rem;
   align-content: center;
 }
 
 
 .fa-angle-left,
 .fa-angle-right {
-color: #000;
+  color: #000;
 }
 
-.user_image img{
-  border-radius:50%;
+.user_image img {
+  border-radius: 50%;
 }
 
-.carousel-inner{
-  height:30rem;
-  text-align:center;
-  margin:1%;
+.carousel-inner {
+  height: 30rem;
+  text-align: center;
+  margin: 1%;
 }
 
-.carousel-item{
+.carousel-item {
   padding: 0 15%;
 }
 
-.team-text{
-  margin:3%;
+.team-text {
+  margin: 3%;
 }
 
 
@@ -143,10 +143,3 @@ color: #000;
   left: 2rem; */
 }
 
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-}
