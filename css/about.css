@@ -95,7 +95,10 @@ color: #000;
   height:30rem;
   text-align:center;
   margin:1%;
-  padding:0 15%;
+}
+
+.carousel-item{
+  padding: 0 15%;
 }
 
 .team-text{
