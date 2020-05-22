@@ -29,9 +29,10 @@ body {
   font-family: "Monserrat-Light"
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   background-color: #ffca2b;
-}
+} */
+
 .background-image{
   height:200rem;
 }
