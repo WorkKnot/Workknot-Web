@@ -1,0 +1,148 @@
+body {
+  font-family: "Montserrat";
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0.2% 5%;
+}
+
+.logo {
+  width:5%;
+  height:5%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 0.5rem ;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Monserrat-Light"
+}
+
+.nav-link:hover {
+  background-color: #ffca2b;
+}
+.background-image{
+  height:200rem;
+}
+
+
+/* About Us Quote section */
+#quote{
+  text-align:center;
+  margin:0 0 3%;
+}
+
+.background-image{
+  opacity:0.5;
+  left:0;
+  width:100%;
+  height:45rem;
+  z-index:-1;
+}
+
+ #quote .container-fluid{
+    padding: 5% 15%;
+}
+
+.container-fluid h2{
+  font-size:5rem;
+  font-weight: bold;
+  padding:4% 0 1%;
+}
+
+.container-fluid p{
+  font-size:2rem;
+  line-height: 1.75;
+}
+
+
+
+/* Team carousel */
+
+.team-main-text{
+  margin:2% 10% 4%;
+}
+
+.user_image{
+  margin:auto;
+  height:50%;
+  width:10rem;
+  align-content: center;
+}
+
+
+.fa-angle-left,
+.fa-angle-right {
+color: #000;
+}
+
+.user_image img{
+  border-radius:50%;
+}
+
+.carousel-inner{
+  height:30rem;
+  text-align:center;
+  margin:1%;
+  padding:0 15%;
+}
+
+.team-text{
+  margin:3%;
+}
+
+
+
+/* footer */
+#footer {
+  padding: 5rem 10rem 2rem;
+  background: #000;
+}
+
+.footer-description {
+  margin-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-description img {
+  width: 20%;
+}
+
+.footer-description hr {
+  border-color: #fff;
+}
+
+.footer-description img {
+  width: 10rem;
+}
+
+.list-inline-item {
+  width: 2rem;
+}
+
+.logo-footer {
+  /* position: relative;
+  left: 2rem; */
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+}
