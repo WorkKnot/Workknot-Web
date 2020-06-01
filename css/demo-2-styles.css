@@ -59,7 +59,7 @@ body {
 /* Title image */
 .title-image {
   width: 60%;
-
+  
   margin-left: 5.7rem;
 }
 
@@ -180,4 +180,18 @@ body {
 .logo-footer {
   /* position: relative;
   left: 2rem; */
+}
+
+
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(5);
+  }
 }
