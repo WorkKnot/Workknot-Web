@@ -59,7 +59,7 @@ body {
 .container-fluid h2 {
   font-size: 5rem;
   font-weight: bold;
-  padding: 2% 0 1%;
+  padding:2% 0 1%;
 }
 
 .container-fluid p {
@@ -138,8 +138,23 @@ body {
   width: 2rem;
 }
 
-.logo-footer {
-  /* position: relative;
-  left: 2rem; */
+/* .logo-footer {
+  position: relative;
+  left: 2rem;
+} */
+
+<<<<<<< HEAD
+
+
+
+
+@media(max-width: 600px) {
+
+.container-fluid p {
+  font-size: 0.5rem;
+  line-height: 1;
 }
 
+}
+=======
+>>>>>>> e44dfe85839a9138644c6325d191b14619f66fb6
