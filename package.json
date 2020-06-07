@@ -1,0 +1,23 @@
+{
+  "name": "work-knot-web",
+  "version": "1.0.0",
+  "description": "This project is started with an idea to help out local labourers get a job.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/White-Soul-2020/Work-Knot-Web.git"
+  },
+  "author": "White Soul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/White-Soul-2020/Work-Knot-Web/issues"
+  },
+  "homepage": "https://github.com/White-Soul-2020/Work-Knot-Web#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
