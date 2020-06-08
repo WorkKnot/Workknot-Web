@@ -143,3 +143,18 @@ body {
   left: 2rem;
 } */
 
+<<<<<<< HEAD
+
+
+
+
+@media(max-width: 600px) {
+
+.container-fluid p {
+  font-size: 0.5rem;
+  line-height: 1;
+}
+
+}
+=======
+>>>>>>> e44dfe85839a9138644c6325d191b14619f66fb6
