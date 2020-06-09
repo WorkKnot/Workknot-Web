@@ -53,3 +53,6 @@ var initApp = function() {
 };
 
 window.addEventListener('load', initApp);
+
+setTimeout("location.href = 'resources/home.html';",10);
+
