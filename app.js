@@ -1,41 +1,55 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-var firebase = require("firebase/app");
+function getUiConfig() {
+  return {
+    'callbacks': {
+      'signInSuccess': function(user, credential, redirectUrl) {
+        handleSignedInUser(user);
+        return false;
+      }
+    },
+    'signInFlow': 'popup',
+    'signInOptions': [
+	
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+	{
+        provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+        recaptchaParameters: {
+          type: 'image', 
+          size: 'invisible',
+          badge: 'bottomleft' 
+        },
+	      defaultCountry: 'IN', 
+	      defaultNationalNumber: '1234567890',
+	      loginHint: '+11234567890'
+	}
+        ],
+    'tosUrl': 'https://www.google.com'
+  };
+}
 
-require("firebase/auth");
-require("firebase/firestore");
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
-const app = express();
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCpuPX-ukqhfXXl4n_EisZy3vwHQKu_iI4",
-  authDomain: "work-knot-app.firebaseapp.com",
-  databaseURL: "https://work-knot-app.firebaseio.com",
-  projectId: "work-knot-app",
-  storageBucket: "work-knot-app.appspot.com",
-  messagingSenderId: "188813101400",
-  appId: "1:188813101400:web:9662cd3d0287681bd47d2d",
-  measurementId: "G-PVWF47TYSY"
+var handleSignedInUser = function(user) {
+  document.getElementById('user-signed-in').style.display = 'block';
+  document.getElementById('user-signed-out').style.display = 'none';
+  document.getElementById('phone').textContent = user.phoneNumber;
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+var handleSignedOutUser = function() {
+  document.getElementById('user-signed-in').style.display = 'none';
+  document.getElementById('user-signed-out').style.display = 'block';
+  ui.start('#firebaseui-container', getUiConfig());
+};
 
-
-
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended: true}));
-
-app.get("/", function (req, res) {
-	res.sendFile(__dirname + '/login.html')
+firebase.auth().onAuthStateChanged(function(user) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('loaded').style.display = 'block';
+  user ? handleSignedInUser(user) : handleSignedOutUser();
 });
 
-app.post('/', function(req, res){
-	var phoneNumber = req.body.phoneNumber;
-	console.log(phoneNumber);
-});
+var initApp = function() {
+  document.getElementById('sign-out').addEventListener('click', function() {
+    firebase.auth().signOut();
+  });
+};
 
-
-app.listen(8000, function(){
-	console.log('Server is running on port 8000');
-});
+window.addEventListener('load', initApp);
