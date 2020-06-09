@@ -18,6 +18,8 @@
   "homepage": "https://github.com/White-Soul-2020/Work-Knot-Web#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "firebase": "^7.15.0",
+    "firebase-tools": "^8.4.2"
   }
 }
