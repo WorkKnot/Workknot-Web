@@ -20,7 +20,7 @@
  </script>
  <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
- <link href="resources/index.css" rel="stylesheet" type="text/css" media="screen" />
+ <link href="resources/css/index.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
 <body>
@@ -30,7 +30,8 @@
     <div id="loaded" class="hidden">
       <div id="main">
         <div id="user-signed-in" class="hidden">
-          <h2> Redirecting </h2>
+          <h2> If not redirected in 5 seconds click the button down present</h2> 
+          <button onclick="redirect()">Redirect</button>
         </div>
         <div id="user-signed-out" class="hidden">
           <div id="firebaseui-spa">
@@ -42,5 +43,10 @@
     </div>
   </div>
   <script src="resources/js/index.js"></script>
+  <script>
+    function redirect() {
+      window.location.replace("resources/home.html");
+    }
+  </script>
 </body>
 </html>

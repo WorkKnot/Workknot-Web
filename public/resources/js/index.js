@@ -54,5 +54,5 @@ var initApp = function() {
 
 window.addEventListener('load', initApp);
 
-setTimeout("location.href = 'resources/home.html';",10);
+//setTimeout("location.href = 'resources/home.html';",10);
 
