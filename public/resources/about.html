@@ -58,7 +58,7 @@
             Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Sign Out</a>
+            <a class="nav-link" onclick="signout()" href="sign-out.html">Sign Out</a>
           </li>
         </ul>
       </div>
@@ -276,5 +276,11 @@
       </div>
     </div>
   </section>
+  <script src="resources/js/index.js"></script>
+  <script>
+    function signout() {
+      firebase.auth().signOut()
+    }
+  </script>
 </body>
 </html>
