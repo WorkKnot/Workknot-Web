@@ -9,17 +9,14 @@ TO A GREAT VISION OF REDUCING UNEMPLOYMENT-RELATED PROBLEMS IN INDIA.
 
 ## Team Workknot
 
-CORE MEMBERS:
 1. [Ankit Kumar (Founder & Marketing head)](https://www.linkedin.com/in/ankit-kumar-44488a191/)
 2. [Nishant Mishra (Co-founder & Web developer)](https://www.linkedin.com/in/nishant-mishra-16b76b1a4/)
 3. [Hardik Kumar (Technical head & App developer)](https://www.linkedin.com/in/hardikkr/)
-4. Dayasheel (Innovator & Legal helper)
-
-SUPPORT:
-1. [Harshit Ruwali (AI developer)](https://www.linkedin.com/in/harshitruwali/)
-2. Anjana Haridas (Content writer & Speaker)
-3. [Avani Mishra (Marketing strategist, R&D and Content creator)](https://www.linkedin.com/in/avani-mishra-b85282190/)
-4. [Ashi Sachan (Graphic designer)](https://www.linkedin.com/in/ashi-sachan-58801b182/)
+4. [Harshit Ruwali (Technical support & AI developer)](https://www.linkedin.com/in/harshitruwali/)
+5. Dayasheel (Innovator & Legal helper)
+6. Anjana Haridas (Content writer & Speaker)
+7. [Avani Mishra (Marketing strategist & Content creator)](https://www.linkedin.com/in/avani-mishra-b85282190/)
+8. [Ashi Sachan (Graphic designer)](https://www.linkedin.com/in/ashi-sachan-58801b182/)
 
 ## About Workknot
 
