@@ -64,4 +64,3 @@ Workknot is an online platform which will be initially implemented on a small sc
 For Team Workknot, revenue or source generation does not hold any priority right now. Our main aim is to make Workknot a valuable social asset and to give a powerful support to the Indian workforce through establishing a good customer-worker connection. However, we may need some financial resources to support this kind act. So, we may use advertisements or other healthy ways to support ourselves as well as Workknot.
 
 As a future plan, we have also decided that we may provide some valuable support (like healthcare facilities, insurance, etc.) to the necessitous workers connecting to Workknot. Though all such plans depend on the success of this small step of Workknot, we are hopeful for the best.
-
