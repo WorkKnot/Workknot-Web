@@ -1,28 +1,200 @@
-
 body {
-  margin: 0;
+  font-family: "Montserrat";
 }
 
-#container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+.logo {
+  width: 7%;
+  height: 7%;
 }
 
-.clearfix {
-  clear: both;
+#title {
+  background: #ffbf00;
+  color: #fff;
 }
 
-.hidden {
-  display: none;
+.row-desc h1 {
+  font-family: "Ubuntu";
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 20% auto 5%;
+  width: 90%;
 }
 
-#user-info {
-  border: none;
-  clear: both;
-  margin: 0 auto 20px;
-  max-width: 400px;
+.container-fluid {
+  padding: 1% 15% 3%;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Monserrat-Light"
+}
+
+.nav-link:hover {
+  background-color: #ffca2b;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+.title-image {
+  width: 60%;
+/* <<<<<<< HEAD:css/demo-2-styles.css */
+  
+/* ======= */
+/* >>>>>>> e44dfe85839a9138644c6325d191b14619f66fb6:css/index.css */
+  margin-left: 5.7rem;
+}
+
+.row-desc {
+  position: absolute;
+  margin: 3% 0;
+}
+
+
+
+.background-image {
+  height: 50rem;
+  width: 100%;
+}
+
+
+
+/* Features */
+#features {
+  padding: 5% 10%;
+}
+
+.search-bars {
+  margin: 1rem auto;
+  width: 80%;
+}
+
+#features .jumbotron {
+  padding: 2% 4% 1%;
+}
+
+.form-description {
+  padding: 0;
+}
+
+.icon {
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+
+/* About us */
+#quotes {
+  background: #c2c1c0;
+  padding: 2% 15%;
+}
+
+.card-quotes {
+  background-color: #c2c1c0;
+  border: 0;
+}
+
+.card-quotes p {
+  font-size: 4rem;
+  font-family: serif;
+  color: #fff;
+
+}
+
+/* services */
+#services {
+  padding: 5% 20%;
+}
+
+.jumbotron-description {
+  margin-bottom: 0;
+  background-color: #ffbf00;
+  padding: 5% 5%;
+}
+
+.card-services {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.worker-card {
+  padding: 1rem;
+}
+
+.worker-card card-body {
   padding: 10px;
-  text-align: left;
 }
 
+
+
+/* footer */
+#footer {
+  padding: 5rem 10rem 2rem;
+  background: #000;
+}
+
+.footer-description {
+  margin-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-description img {
+  width: 20%;
+}
+
+.footer-description hr {
+  border-color: #fff;
+}
+
+.footer-description img {
+  width: 10rem;
+}
+
+.list-inline-item {
+  width: 2rem;
+}
+
+
+
+.logo-footer {
+  /* position: relative;
+  left: 2rem; */
+}
+
+
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(5);
+  }
+}
