@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gmail and Phone Authentication</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+   var config = {
+     apiKey: "AIzaSyCpuPX-ukqhfXXl4n_EisZy3vwHQKu_iI4",
+     authDomain: "work-knot-app.firebaseapp.com",
+     databaseURL: "https://work-knot-app.firebaseio.com",
+     projectId: "work-knot-app",
+     storageBucket: "work-knot-app.appspot.com",
+     messagingSenderId: "188813101400",
+     appId: "1:188813101400:web:9662cd3d0287681bd47d2d",
+     measurementId: "G-PVWF47TYSY"
+   };
+   firebase.initializeApp(config);
+ </script>
+ <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+ <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+ <link href="css/login.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<body>
+  <div id="container">
+    <h3>Authentication via Gmail/Phone number</h3>
+    <div id="loading">Loading...</div>
+    <div id="loaded" class="hidden">
+      <div id="main">
+        <div id="user-signed-in" class="hidden">
+          <h2> If not redirected in 5 seconds click the button down present</h2> 
+          <button onclick="redirect()">Redirect</button>
+        </div>
+        <div id="user-signed-out" class="hidden">
+          <div id="firebaseui-spa">
+            <h3>App:</h3>
+            <div id="firebaseui-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+  <script>
+    function redirect() {
+      window.location.replace("./home.html");
+    }
+  </script>
+</body>
+</html>

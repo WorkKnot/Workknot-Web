@@ -1,4 +1,3 @@
-
 function getUiConfig() {
   return {
     'callbacks': {
@@ -9,20 +8,20 @@ function getUiConfig() {
     },
     'signInFlow': 'popup',
     'signInOptions': [
-	
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-	{
-        provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-        recaptchaParameters: {
-          type: 'image', 
-          size: 'invisible',
-          badge: 'bottomleft' 
-        },
-	      defaultCountry: 'IN', 
-	      defaultNationalNumber: '1234567890',
-	      loginHint: '+11234567890'
-	}
-        ],
+
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    {
+      provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+      recaptchaParameters: {
+        type: 'image', 
+        size: 'invisible',
+        badge: 'bottomleft' 
+      },
+      defaultCountry: 'IN', 
+      defaultNationalNumber: '1234567890',
+      loginHint: '+11234567890'
+    }
+    ],
     'tosUrl': 'https://www.google.com'
   };
 }
@@ -54,3 +53,5 @@ var initApp = function() {
 };
 
 window.addEventListener('load', initApp);
+
+//setTimeout("location.href = 'resources/home.html';",10);
