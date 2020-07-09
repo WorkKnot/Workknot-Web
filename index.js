@@ -4,14 +4,19 @@ const request = require('request');
 const https = require('https');
 var admin = require('firebase-admin');
 var firebase = require("firebase/app");
-const serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
+var serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
 
 const app = express();
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
+
+// admin.initializeApp(functions.config().firebase);
+
 admin.initializeApp({
-	credential: admin.credential.applicationDefault()	
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://work-knot-app.firebaseio.com"
+
 });
 
 const db = admin.firestore();
@@ -39,12 +44,14 @@ firebase.initializeApp(firebaseConfig);
 
 app.post('/', function(req, res){
 	const Name = req.body.Name;
-	const work = req.body.work;
+	const work = req.body.Profession;
 	const number = req.body.phnumber;
 	const email = req.body.email;
 	const address = req.body.address;
+	const location = req.body.location;
+	const about = req.body.about;
 
-	console.log(Name, work, number, email, address);
+	console.log(Name, work, number, email, address, about);
 
 	var data = {
 		members: [
@@ -57,7 +64,9 @@ app.post('/', function(req, res){
 				OfficeAddress: address,
 				Profession: work,
 				Rating:"N.A.",
-				EMail: email,	
+				EMail: email,
+				Location: location, 
+				Discription: about
 			}
 		}
 		]
@@ -108,9 +117,11 @@ async function initializeAppSA() {
 		Profession: work,
 		Rating:"N.A.",
 		EMail: email,
+		Location: location,
+		Discription: about
 	};
 	
-	return db.collection('sampleData').doc('data1').set(sdata).then(() =>{
+	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 		res.sendFile(__dirname + "/success.html");
 	})
 

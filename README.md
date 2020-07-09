@@ -39,10 +39,10 @@ As a future plan, we have also decided that we may provide some valuable support
 Install the required node packges.
 
 Running in  Linux for Mac
-export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
+`export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"`
 
 Running in Windows 
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"
+`$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"`
 
 Where service-account-file.json is the secreat json file from firebase.
 
