@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Oblique</title>
+  <title>WorkKnot</title>
 
   <!-- Css stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -28,7 +28,11 @@
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/43dbc129c3.js" crossorigin="anonymous"></script>
-
+  <!-- Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
 </head>
 
@@ -37,41 +41,43 @@
     <div>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <img src="images/logo.png" class="logo" alt="">
-        <a class="navbar-brand" href="home.html">Work Knot</a>
-
+        <img src="images/logo.jpg" class="logo">
+        <a class="navbar-brand" href="../index.html">WorkKnot</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
+        
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="resources/about.html">About Us</a>
           </li>
+        
           <li class="nav-item">
-            <a class="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=osupport@oblique.com">Contact
-            Us</a>
+            <a class="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=workknot@gmail.com">Contact Us</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" onclick="signout()" href="sign-out.html">Sign Out</a>
+            <a class="nav-link" href="join.html">Join WorkKnot</a>
           </li>
         </ul>
       </div>
     </nav>
 
   </section>
+
   <!-- About us Quote -->
   <section id="quote">
     <img class="background-image card-img-top" src="images/construction.jpg" alt="">
     <div class=" container-fluid card-img-overlay">
       <h2>About us...</h2>
       <p class="card-text">
-        We, Team Oblique, believe that everyone should get
+        We, Team WorkKnot, believe that everyone should get
         fair share in the society. We have seen that it is
         very difficult to get in touch with labourers for
         temporary services so, here We are with this platform
@@ -137,7 +143,7 @@
                 tried my best to
                 rectify the loopholes in the plan, so that we could come up with the best platform for our customers.
                 <br>
-                I have gained knowledge in languages like html, java script and python .My job is to focus on the
+                I have gained knowledge in languages like html, JavaScript and python .My job is to focus on the
                 webpage and upgrade it regularly.
               </p>
             </div>
@@ -199,7 +205,7 @@
             <p>
               I am an undergraduate pursuing computer science with specialisation in Cyber Security in VIT,
               Bhopal. I joined the team late , but trust me , the enthusiasm was quite high . I am the
-              voice of this platform and it is my duty to convey the message of Oblique loud and clear.
+              voice of this platform and it is my duty to convey the message of Team WorkKnot was loud and clear.
             </p>
           </div>
           <div class="team-name">
@@ -238,6 +244,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=osupport@oblique.com">Contact us</a></li>
+          <li><a href="join.html">Join WorkKnot</a></li>
             <!--
             Will introuduce this later. Distraction for now.
             <li><a href="#">Get Started</a></li>
@@ -253,7 +260,7 @@
       <div class="col-sm-3">
         <h4>Contacts</h4>
         <br>
-        <p>Email: support@oblique.com </p>
+        <p>Email: workknot@gmail.com </p>
         <p>Phone: +91 00000-00000</p>
       </div>
       <hr>
@@ -265,22 +272,16 @@
           <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
           <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
           <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-          <li class="list-inline-item"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=osupport@oblique.com"
+          <li class="list-inline-item"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=workknot@gmail.com"
             target="_blank"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
       </div>
       <div class=" text-center text-white">
-        <p class="h3"><u><a href="#">Work Knot</a></u></p>
+        <p class="h3"><u><a href="#">WorkKnot</a></u></p>
         <p class="h5">© All right Resevered.</p>
       </div>
     </div>
   </section>
-  <script src="resources/js/index.js"></script>
-  <script>
-    function signout() {
-      firebase.auth().signOut()
-    }
-  </script>
 </body>
 </html>
