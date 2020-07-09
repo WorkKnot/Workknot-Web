@@ -4,7 +4,7 @@ const request = require('request');
 const https = require('https');
 var admin = require('firebase-admin');
 var firebase = require("firebase/app");
-var serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
+// var serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
 
 const app = express();
 
@@ -14,7 +14,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 // admin.initializeApp(functions.config().firebase);
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert({
+    "private_key": process.env.FIREBASE_PRIVATE_KEY,
+    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
+  }),
   databaseURL: "https://work-knot-app.firebaseio.com"
 
 });
