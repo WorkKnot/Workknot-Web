@@ -41,7 +41,7 @@ require("firebase/firestore");
 
 
 var firebaseConfig = {
-	apiKey: "AIzaSyCpuPX-ukqhfXXl4n_EisZy3vwHQKu_iI4", 
+	apiKey: process.env.API, 
 	authDomain: "work-knot-app.firebaseapp.com",
 	databaseURL: "https://work-knot-app.firebaseio.com",
 	projectId: "work-knot-app",
@@ -121,7 +121,7 @@ async function initializeAppSA() {
 
 	//console.log(sdata.body);
 	//const obj = JSON.parse(sdata.body);
-
+async function pushData() {
 	const sdata = {
 		Contact: number,
 		Name: Name,
@@ -136,6 +136,7 @@ async function initializeAppSA() {
 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 		res.sendFile(__dirname + "/success.html");
 	})
+}
 
 	const request = https.request(url, options, function(response){
 
