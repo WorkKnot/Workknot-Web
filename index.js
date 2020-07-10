@@ -121,7 +121,7 @@ async function initializeAppSA() {
 
 	//console.log(sdata.body);
 	//const obj = JSON.parse(sdata.body);
-async function pushData() {
+
 	const sdata = {
 		Contact: number,
 		Name: Name,
@@ -136,10 +136,8 @@ async function pushData() {
 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 		res.sendFile(__dirname + "/success.html");
 	})
-}
 
 	const request = https.request(url, options, function(response){
-
 		if (response.statusCode === 200){
 			res.sendFile(__dirname + "/success.html");
 		}
