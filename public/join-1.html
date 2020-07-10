@@ -45,17 +45,11 @@
       }
     }
   </style>
-  <!-- Custom styles for this template -->
   <link href="css/join.css" rel="stylesheet">
 </head>
 <body class="text-center">
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
 
- <!--  If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-
-  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script>
     var firebaseConfig = {
       apiKey: "AIzaSyCpuPX-ukqhfXXl4n_EisZy3vwHQKu_iI4",
@@ -71,7 +65,7 @@
   </script>
 
 
-  <form action="/" class="form-signin" method="POST">
+  <form action="/" class="form-signin" method="post" enctype="multipart/form-data">
     <img class="mb-4" src="images/logo.jpg" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Join WorkKnot</h1>
     
@@ -109,15 +103,15 @@
     <div class="box">
       <div>Provide your Addhar Card Image</div>
       <br>
-      <input type="file" accept="image/*" id="photo" name="aadhar" required>
+      <input type="file" id="photo" accept="image/*" name="aadhar" required>
       <progress value="0" max="100" id="uploader">0%</progress>
       <script>
-        const fileInput = document.getElementById('file-input');
-        fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+        const image = document.getElementById('aadhar');
+        // fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
       </script>
 
     <br>
-    <br>
+  <br>
 <!-- Send file to firebase -->
   <div id="target">You can also drag an image file here</div>
   <br> 
@@ -138,11 +132,6 @@
       e.dataTransfer.dropEffect = 'copy';
     });
   </script>
-  </div>
-  <br>
-  <br>
-
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Join</button>
 
   <script>
     
@@ -178,7 +167,12 @@
     });
 
   </script>
+  </div>
+  <br>
+  <br>
 
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Join</button>
+  
   <p class="mt-5 mb-3 text-muted">&copy; WorkKnot <br> We respect your Privacy</p>
   </form>
 
