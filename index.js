@@ -23,12 +23,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 admin.initializeApp({
-  credential: admin.credential.cert({
-      projectId: process.env.FIREBASE_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
-  }),
-  databaseURL: "https://work-knot-app.firebaseio.com"
+	credential: admin.credential.cert({
+		projectId: process.env.FIREBASE_PROJECT_ID,
+		clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+		privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n')
+	}),
+	databaseURL: "https://work-knot-app.firebaseio.com"
 });
 
 const db = admin.firestore();
@@ -91,37 +91,36 @@ app.post('/', function(req, res){
 	// 	auth: "" //api
 	// }
 
-async function initializeAppFunctions() {
+	async function initializeAppFunctions() {
 		process.env.GCLOUD_PROJECT = 'firestorebeta1test2';
-  // [START initialize_app_functions]
-  const admin = require('firebase-admin');  
-  admin.initializeApp();
+  		// [START initialize_app_functions]
+  		const admin = require('firebase-admin');  
+  		admin.initializeApp();
 
-  const db = admin.firestore();
+  		const db = admin.firestore();
 
-  // [END initialize_app_functions]
-  return db;
-}
+  		// [END initialize_app_functions]
+  		return db;
+	}
 
-async function initializeAppSA() {
-  // [START initialize_app_service_account]
+	async function initializeAppSA() {
+  	// [START initialize_app_service_account]
 
-  const serviceAccount = require('./path/to/serviceAccountKey.json');
+  		const serviceAccount = require('./path/to/serviceAccountKey.json');
 
-  admin.initializeApp({
-  	credential: admin.credential.cert(serviceAccount)
-  });
+  		admin.initializeApp({
+  		credential: admin.credential.cert(serviceAccount)
+  	});
 
-  const db = admin.firestore();
+  	const db = admin.firestore();
 
-  // [END initialize_app_service_account]
-  return db;
-}
+  	// [END initialize_app_service_account]
+  	return db;
+	}
 
 
 	//console.log(sdata.body);
 	//const obj = JSON.parse(sdata.body);
-
 	const sdata = {
 		Contact: number,
 		Name: Name,
@@ -132,11 +131,17 @@ async function initializeAppSA() {
 		Location: location,
 		Discription: about
 	};
-	
+
+	// async function sendData() {
+	// 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
+	// 		res.sendFile(__dirname + "/success.html");
+	// 	})
+	// }
+
 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 		res.sendFile(__dirname + "/success.html");
 	})
-
+	
 	const request = https.request(url, options, function(response){
 		if (response.statusCode === 200){
 			res.sendFile(__dirname + "/success.html");
