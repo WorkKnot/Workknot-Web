@@ -34,21 +34,14 @@ For Team Workknot, revenue or source generation does not hold any priority right
 
 As a future plan, we have also decided that we may provide some valuable support (like healthcare facilities, insurance, etc.) to the necessitous workers connecting to Workknot. Though all such plans depend on the success of this small step of Workknot, we are hopeful for the best.
 
+## Android app
+You can get the Android app from Google Play Store from [link](https://play.google.com/store/apps/details?id=com.kumarhardik.obliqueapp).<br>
+Currently the app is only for Gaya and Bodh-Gaya Disrict, and we aim to spread it.
 
-### Using the webpage
-Install the required node packges.
+### Using and updating the webpage locally for developers
+Install the required node packges by running `npm install` in the web-app directory.
 
-Running in  Linux for Mac
-`export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"`
+Get the `.env` file form the developers by contacting them.
 
-Running in Windows 
-`$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"`
-
-Where service-account-file.json is the secreat json file from firebase.
-
-Refer https://firebase.google.com/docs/admin/setup?hl=ru#linux-or-macos
-
-For the json file contact the developers.  
-
-After getting the json file, 
-  run `nodemon index.js`
+After getting the `.evn` file,
+  run `nodemon index.js`.
