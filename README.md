@@ -12,7 +12,7 @@ TO A GREAT VISION OF REDUCING UNEMPLOYMENT-RELATED PROBLEMS IN INDIA.
 1. [Ankit Kumar (Founder & Marketing head)](https://www.linkedin.com/in/ankit-kumar-44488a191/)
 2. [Nishant Mishra (Co-founder & Web developer)](https://www.linkedin.com/in/nishant-mishra-16b76b1a4/)
 3. [Hardik Kumar (Technical head & App developer)](https://www.linkedin.com/in/hardikkr/)
-4. [Harshit Ruwali (Technical support & AI developer)](https://www.linkedin.com/in/harshitruwali/)
+4. [Harshit Ruwali (Technical support, Web-Developer & AI developer)](https://www.linkedin.com/in/harshitruwali/)
 5. Dayasheel (Innovator & Legal helper)
 6. Anjana Haridas (Content writer & Speaker)
 7. [Avani Mishra (Marketing strategist & Content creator)](https://www.linkedin.com/in/avani-mishra-b85282190/)
