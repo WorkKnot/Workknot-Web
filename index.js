@@ -62,11 +62,25 @@ app.post('/', function(req, res){
 	const address = req.body.address;
 	const location = req.body.location;
 	const about = req.body.about;
-	const qname = req.body.query-name;
-	const qemail = req.body.query-email;
+	const qname = req.body.qname;
+	const qemail = req.body.qemail;
 	const query = req.body.query;
 
-	console.log(Name, work, number, email, address, about);
+	// console.log(query);
+	console.log('-----------------------------------------');
+
+	try {
+  		console.log(Name);
+	}
+	catch(err) {
+  		//console.log(query);
+	}
+	// if (Name && work && number && email && address && location && about == 'undifined'){
+	// 	console.log(query);
+	 	console.log('-----------------------------------------');
+	// }
+
+	//console.log(Name, work, number, email, address, about, query);
 
 	var data = {
 		members: [
@@ -82,8 +96,8 @@ app.post('/', function(req, res){
 				EMail: email,
 				Location: location, 
 				Discription: about,
-				QueryName: query-name,
-				QueryEmail: query-email,
+				QueryName: qname,
+				QueryEmail: qemail,
 				Query: query
 			}
 		}
@@ -139,8 +153,8 @@ app.post('/', function(req, res){
 	};
 
 	const qdata ={
-		QueryName: query-name,
-		QueryEmail: query-email,
+		QueryName: qname,
+		QueryEmail: qemail,
 		Query: query
 	};
 
@@ -150,13 +164,20 @@ app.post('/', function(req, res){
 	// 	})
 	// }
 
-	return db.collection('test-query').doc(query-email).set(qdata).then(() =>{
-		res.sendFile(__dirname + "/success.html");
-	})
-
-	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
-		res.sendFile(__dirname + "/success.html");
-	})
+	try{
+		return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
+			res.sendFile(__dirname + "/success.html");
+		})
+	}
+	catch (err){
+		console.log('-----------------------------------------');
+		// console.log(err);
+		return db.collection('query').doc(qemail).set(qdata).then(() =>{
+			res.sendFile(__dirname + "/success.html");
+		})
+	}
+	
+	
 	
 	const request = https.request(url, options, function(response){
 		if (response.statusCode === 200){

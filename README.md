@@ -43,5 +43,5 @@ Install the required node packges by running `npm install` in the web-app direct
 
 Get the `.env` file form the developers by contacting them.
 
-After getting the `.evn` file,
+After getting the `.env` file,
   run `nodemon index.js`.

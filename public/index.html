@@ -35,7 +35,24 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/43dbc129c3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/43dbc129c3.js" crossorigin="anonymous"></script> 
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
 
   <!-- Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
@@ -198,95 +215,8 @@
       </div>
     </section>
 
-    <!--Services-->
-    <section id="services">
-
-      <div class="jumbotron jumbotron-description">
-        <h2 class="card-title">Construction Pack</h2>
-        <p class="lead">For any type of Construction work</p>
-        <div class="card card-services">
-          <div class="card-body">
-            <h3 class="card-title">Services Provided in this Pack</h3>
-            <div class="row text-center">
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">01</p>
-                    <p>Construction <br>Management</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="display-3">02</p>
-                    <p>Civil <br>Engineer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="display-3">03</p>
-                    <p>Construction <br> Labour</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6  worker-card">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="display-3">04</p>
-                    <p>Ironwork</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 worker-card ">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">05</p>
-                    <p>Masonry</p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">06</p>
-                    <p>Electrician</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">07</p>
-                    <p>Plumbing</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 worker-card">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">08</p>
-                    <p>Glazing</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 worker-card">
-                <div class="card ">
-                  <div class="card-body">
-                    <p class="display-3">09</p>
-                    <p>Carpentry</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
+    <!--why-->
+    <h3>Why workknot?</h3>
 
       <!-- Footer -->
        <div class="footer" role="contentinfo">
@@ -354,7 +284,7 @@
                     </div>
 
                     <div class="item col-md-4 no-border" id="query">
-                        <nav role="navigation" class="">
+                        <nav class="query">
                             <h3>Have a Query?</h3>
                             <br>
                             <div class="query-container">
@@ -364,9 +294,10 @@
                                   <input type="email" name="query-email" class="form-control middle" placeholder="Email" required>
                                   <br>
                                   <input type="text" name="query" class="form-control middle" placeholder="Enter the query" required>
+                                  <br>
+                                  <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
                                 </form>
-                                <br>
-                                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+                                
                             </div>
                         </nav>
                     </div>
