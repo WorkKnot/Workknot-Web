@@ -62,6 +62,9 @@ app.post('/', function(req, res){
 	const address = req.body.address;
 	const location = req.body.location;
 	const about = req.body.about;
+	const qname = req.body.query-name;
+	const qemail = req.body.query-email;
+	const query = req.body.query;
 
 	console.log(Name, work, number, email, address, about);
 
@@ -78,7 +81,10 @@ app.post('/', function(req, res){
 				Rating:"N.A.",
 				EMail: email,
 				Location: location, 
-				Discription: about
+				Discription: about,
+				QueryName: query-name,
+				QueryEmail: query-email,
+				Query: query
 			}
 		}
 		]
@@ -106,7 +112,7 @@ app.post('/', function(req, res){
 	async function initializeAppSA() {
   	// [START initialize_app_service_account]
 
-  		const serviceAccount = require('./path/to/serviceAccountKey.json');
+  		// const serviceAccount = require('./path/to/serviceAccountKey.json');
 
   		admin.initializeApp({
   		credential: admin.credential.cert(serviceAccount)
@@ -132,11 +138,21 @@ app.post('/', function(req, res){
 		Discription: about
 	};
 
+	const qdata ={
+		QueryName: query-name,
+		QueryEmail: query-email,
+		Query: query
+	};
+
 	// async function sendData() {
 	// 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 	// 		res.sendFile(__dirname + "/success.html");
 	// 	})
 	// }
+
+	return db.collection('test-query').doc(query-email).set(qdata).then(() =>{
+		res.sendFile(__dirname + "/success.html");
+	})
 
 	return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 		res.sendFile(__dirname + "/success.html");

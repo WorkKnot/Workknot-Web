@@ -46,6 +46,22 @@
 </head>
 
 <body>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCpuPX-ukqhfXXl4n_EisZy3vwHQKu_iI4",
+      authDomain: "work-knot-app.firebaseapp.com",
+      databaseURL: "https://work-knot-app.firebaseio.com",
+      projectId: "work-knot-app",
+      storageBucket: "work-knot-app.appspot.com",
+      messagingSenderId: "188813101400",
+      appId: "1:188813101400:web:9662cd3d0287681bd47d2d",
+      measurementId: "G-PVWF47TYSY"
+    };
+  firebase.initializeApp(firebaseConfig);
+  </script>
 
   <section class="colored-section" id="title">
 
@@ -337,28 +353,20 @@
                         </nav>
                     </div>
 
-                    <div class="item col-md-4 no-border" id="sitemap">
+                    <div class="item col-md-4 no-border" id="query">
                         <nav role="navigation" class="">
-                            <h3>Sitemap</h3>
-                            <div class="menu-sitemap-container">
-                                <ul id="menu-sitemap" class="list-unstyled">
-                                    <!-- <br>
-                                    <li id="menu-item-16532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16532">
-                                        <a href="">Hire</a>
-                                    </li> -->
-                                    <br>
-                                    <li id="menu-item-16530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16530">
-                                        <a href="join.html">Join WorkKnot</a>
-                                    </li>
-                                    <!-- <br>
-                                    <li id="menu-item-16533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16533">
-                                        <a href="">Jobs</a>
-                                    </li> -->
-                                    <br>
-                                    <li id="menu-item-16531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16531">
-                                        <a href="">Blog</a>
-                                    </li>
-                                </ul>
+                            <h3>Have a Query?</h3>
+                            <br>
+                            <div class="query-container">
+                                <form action="/" class="form-signin" method="POST">
+                                  <input type="text" name ="query-name" class="form-control middle" placeholder="Enter your Name" required>
+                                  <br>
+                                  <input type="email" name="query-email" class="form-control middle" placeholder="Email" required>
+                                  <br>
+                                  <input type="text" name="query" class="form-control middle" placeholder="Enter the query" required>
+                                </form>
+                                <br>
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
                             </div>
                         </nav>
                     </div>
