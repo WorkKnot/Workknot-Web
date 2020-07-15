@@ -38,10 +38,34 @@ As a future plan, we have also decided that we may provide some valuable support
 You can get the Android app from Google Play Store from [link](https://play.google.com/store/apps/details?id=com.kumarhardik.obliqueapp).<br>
 Currently the app is only for Gaya and Bodh-Gaya Disrict, and we aim to spread it.
 
-### Using and updating the webpage locally for developers
-Install the required node packges by running `npm install` in the web-app directory.
+## Using and updating the webpage locally for developers
 
-Get the `.env` file form the developers by contacting them.
+Get the `.env` file form the developers by contacting them and copy it the root directory. 
+
+### Using git 
+Firstly clone the repo by running `https://github.com/WorkKnot/Workknot-Web.git` <br>
+
+Change the directory using `cd Workknot-Web` <br>
+
+Install the required node packges by running `npm install` in the web-app directory.<br>
 
 After getting the `.env` file,
-  run `nodemon index.js`.
+  run `nodemon index.js`
+
+### Using docker
+
+_This is recommended only for the users who are familier with Docker, if not use the above git method._
+
+You may get the docker image by running `docker pull ruwaliharshit/workknot-web`
+
+For running the web at local host run 
+`docker run -it -d -p <outside-port-of-your-choice>:8000 ruwaliharshit/workknot-web`
+
+Now just for conformation that you have correct setup run `docker ps -a` <br>
+
+You should see the image `ruwaliharshit/workknot-web`, if so you are good to proceed.
+
+
+## Contacting the Developers
+
+Shoot out a mail at workknot@gmail.com and we will resopond as soon as possible.
