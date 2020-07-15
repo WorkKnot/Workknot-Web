@@ -3,23 +3,15 @@ body {
 }
 
 .logo {
-  width: 7%;
-  height: 7%;
+  width: 5%;
+  height: 5%;
+  padding:0.5rem;
 }
 
 #title {
-  background: #ffbf00;
   color: #fff;
 }
 
-.row-desc h1 {
-  font-family: "Ubuntu";
-  font-size: 3.75rem;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 20% auto 5%;
-  width: 90%;
-}
 
 .container-fluid {
   padding: 1% 15% 3%;
@@ -27,10 +19,10 @@ body {
 
 
 /* Navigation Bar */
-
 .navbar {
-  padding: 0;
+  padding: 0.2% 5%;
 }
+
 
 .navbar-brand {
   font-family: "Ubuntu";
@@ -39,7 +31,7 @@ body {
 }
 
 .nav-item {
-  padding: 0 0 18px;
+  padding: 0 0.5rem;
 }
 
 .nav-link {
@@ -47,7 +39,7 @@ body {
   font-family: "Monserrat-Light"
 }
 
-.nav-link:hover {
+.nav-item:hover {
   background-color: #ffca2b;
 }
 
@@ -60,95 +52,53 @@ body {
 .title-image {
   width: 60%;
 /* <<<<<<< HEAD:css/demo-2-styles.css */
-  
+
 /* ======= */
 /* >>>>>>> e44dfe85839a9138644c6325d191b14619f66fb6:css/index.css */
   margin-left: 5.7rem;
 }
 
-.row-desc {
-  position: absolute;
-  margin: 3% 0;
+
+
+.overlay {
+  color:#000;
+  /* position:absolute; */
+  z-index:12;
+  top:50%;
+  left:0;
+  width:50%;
+  text-align:center;
+}
+
+.card{
+  margin: auto;
+  color:#000;
+  margin:0 15rem 10rem;
+}
+
+/* badge */
+#badge{
+  margin: 5% 10%;
+}
+
+#badge>.jumbotron{
+  margin:;
 }
 
 
+/* qr code */
 
-.background-image {
-  height: 50rem;
-  width: 100%;
+.container-fluids{
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* Features */
-#features {
-  padding: 5% 10%;
-}
-
-.search-bars {
-  margin: 1rem auto;
-  width: 80%;
-}
-
-#features .jumbotron {
-  padding: 2% 4% 1%;
-}
-
-.form-description {
-  padding: 0;
-}
-
-.icon {
-  padding: 1rem;
-  width: 10rem;
-  height: 10rem;
+.bf-img{
+  width:100%;
+  height:100%;
 }
 
 
-/* About us */
-#quotes {
-  background: #c2c1c0;
-  padding: 2% 15%;
-}
-
-.card-quotes {
-  background-color: #c2c1c0;
-  border: 0;
-}
-
-.card-quotes p {
-  font-size: 4rem;
-  font-family: serif;
-  color: #fff;
-
-}
-
-/* services */
-#services {
-  padding: 5% 20%;
-}
-
-.jumbotron-description {
-  margin-bottom: 0;
-  background-color: #ffbf00;
-  padding: 5% 5%;
-}
-
-.card-services {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.worker-card {
-  padding: 1rem;
-}
-
-.worker-card card-body {
-  padding: 10px;
-}
 
 
 
@@ -199,7 +149,7 @@ ul li{
 #mail{
   background: white;
   padding:10px;
-  border-radius: 10%; 
+  border-radius: 10%;
 }
 
 #facebook{
@@ -223,16 +173,4 @@ ul li{
 
 .menu-legal-container{
   text-align: center;
-}
-
-@media (max-width: 1028px) {
-
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(5);
-  }
 }
