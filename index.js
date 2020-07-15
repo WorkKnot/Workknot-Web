@@ -73,7 +73,7 @@ app.post('/', function(req, res){
   		console.log(Name);
 	}
 	catch(err) {
-  		//console.log(query);
+  		console.log(query);
 	}
 	// if (Name && work && number && email && address && location && about == 'undifined'){
 	// 	console.log(query);
@@ -172,8 +172,8 @@ app.post('/', function(req, res){
 	catch (err){
 		console.log('-----------------------------------------');
 		// console.log(err);
-		return db.collection('query').doc(qemail).set(qdata).then(() =>{
-			res.sendFile(__dirname + "/success.html");
+		return db.collection('query').doc(qemail).collection(query).doc(qname).set(qdata).then(() =>{
+			res.sendFile(__dirname + "/success-query.html");
 		})
 	}
 	
