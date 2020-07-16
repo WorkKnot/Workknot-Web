@@ -87,20 +87,18 @@ body {
 
 
 /* qr code */
-
-.container-fluids{
-  background-image: url("images/bg.png");
-  background-repeat: no-repeat;
-}
-
-.bf-img{
+.bg-img{
   width:100%;
   height:100%;
 }
 
+.phone{
+  width:50%;
+}
 
-
-
+/* .row-desc{
+  position: absolute;
+} */
 
 /* footer */
 /*#footer {
