@@ -119,7 +119,7 @@
       <!-- <input type="submit" name="Profession"> -->
     </div>
 
-    <input type="tel" name ="phnumber" class="form-control middle" placeholder="Enter your Phone Number (+91)" required>
+    <input type="tel" name ="phnumber"  class="form-control middle" placeholder="Enter your Phone Number (+91)" id="phnumber" required>
     <input type="email" name="email" class="form-control middle" placeholder="Email (Optional)">
     <input type="text" name="address" class="form-control middle" placeholder="Office address" required>
     <div class="box">
@@ -186,8 +186,14 @@
       //get file
       var file = e.target.files[0];
 
+      //rename file
+      var blob = file.slice(0, file.size, 'image/png'); 
+      var phnumber = document.getElementById("phnumber").value; 
+      var newFile = new File([blob], phnumber + '.png', {type: 'image/png'});
+  
+
       //storage ref
-      var storageRef = firebase.storage().ref('test-web/' + file.name);
+      var storageRef = firebase.storage().ref('test-web/' + newFile.name);
 
       //upload file
       var task = storageRef.put(file);
