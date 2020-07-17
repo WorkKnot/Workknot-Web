@@ -7,8 +7,6 @@ var firebase = require("firebase/app");
 var fs = require('fs'); 
 require('dotenv').config()
 
-// var serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
-
 const app = express();
 
 app.use(express.static('public'));
@@ -68,7 +66,7 @@ app.post('/', function(req, res){
 	const query = req.body.query;
 
 	// console.log(query);
-	console.log('-----------------------------------------');
+	// console.log('-----------------------------------------');
 
 	try {
   		console.log(Name);
@@ -78,7 +76,7 @@ app.post('/', function(req, res){
 	}
 	// if (Name && work && number && email && address && location && about == 'undifined'){
 	// 	console.log(query);
-	 	console.log('-----------------------------------------');
+	 	// console.log('-----------------------------------------');
 	// }
 
 	//console.log(Name, work, number, email, address, about, query);
@@ -105,12 +103,6 @@ app.post('/', function(req, res){
 		]
 	};
 
-	//const jsonData = JSON.stringify(data);
-	//const url = "https://us10.api.mailchimp.com/3.0/lists/8fd61d4b63"; //listid
-	// const options = {
-	// 	method: "POST",
-	// 	auth: "" //api
-	// }
 
 	async function initializeAppFunctions() {
 		process.env.GCLOUD_PROJECT = 'firestorebeta1test2';
@@ -166,14 +158,14 @@ app.post('/', function(req, res){
 	// }
 
 	try{
-		return db.collection('test-web').doc(location).collection(work).doc(number).set(sdata).then(() =>{
+		return db.collection('Professionals').doc(location).collection(work).doc(number).set(sdata).then(() =>{
 			res.sendFile(__dirname + "/success.html");
 		})
 	}
 	catch (err){
-		console.log('-----------------------------------------');
+		// console.log('-----------------------------------------');
 		// console.log(err);
-		return db.collection('query').doc(qemail).collection(query).doc(qname).set(qdata).then(() =>{
+		return db.collection('Query').doc(qemail).collection(query).doc(qname).set(qdata).then(() =>{
 			res.sendFile(__dirname + "/success-query.html");
 		})
 	}
@@ -200,9 +192,6 @@ app.post('/', function(req, res){
 app.post("/failure", function (req, res) {
 	res.redirect("/");
 });
-// app.post('home', function (req, res) {
-// 	res.redirect('/');
-// })
 
 app.listen(process.env.PORT || 8000, function(){
 	console.log('Server is running on port 8000');
