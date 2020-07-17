@@ -4,6 +4,7 @@ const request = require('request');
 const https = require('https');
 var admin = require('firebase-admin');
 var firebase = require("firebase/app");
+var fs = require('fs'); 
 require('dotenv').config()
 
 // var serviceAccount = require('/Users/harshitruwali/Downloads/work-knot-app-firebase-adminsdk-b5fuf-db65e7f570.json')
