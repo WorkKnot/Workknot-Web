@@ -1,10 +1,10 @@
 body {
-  font-family: "Montserrat";
+  font-family: "Dosis";
 }
 
 .logo {
-  width: 5%;
-  height: 5%;
+  width: 4%;
+  height: 4%;
   padding:0.5rem;
 }
 
@@ -25,8 +25,8 @@ body {
 
 
 .navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
+  font-family: "Dosis";
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -43,62 +43,83 @@ body {
   background-color: #ffca2b;
 }
 
+#title .carousel-caption{
+  margin: 0 20% 10%;
+}
+
+#title .carousel-caption h1{
+font-size: 3rem;
+}
+
 /* Download Buttons */
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
-/* Title image */
-.title-image {
-  width: 60%;
-/* <<<<<<< HEAD:css/demo-2-styles.css */
 
-/* ======= */
-/* >>>>>>> e44dfe85839a9138644c6325d191b14619f66fb6:css/index.css */
-  margin-left: 5.7rem;
-}
-
-
-
-.overlay {
-  color:#000;
-  /* position:absolute; */
-  z-index:12;
-  top:50%;
-  left:0;
-  width:50%;
-  text-align:center;
-}
-
-.card{
-  margin: auto;
-  color:#000;
-  margin:0 15rem 10rem;
-}
-
-/* badge */
-#badge{
+/* qrcode */
+#qrcode{
   margin: 5% 10%;
 }
 
-#badge>.jumbotron{
-  margin:;
+#qrcode .jumbotron{
+  text-align: center;
+  margin:0;
+  padding: 1rem 1rem 3rem;
 }
 
+#qrcode h2{
+  margin:1rem 0 2rem;
+}
 
-/* qr code */
+/* installation */
+#install{
+  color: #fff;
+}
+
 .bg-img{
   width:100%;
   height:100%;
 }
 
 .phone{
-  width:50%;
+  width:100%;
 }
 
-/* .row-desc{
-  position: absolute;
-} */
+#install .jumbotron{
+	background-image: url('../images/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+  text-align: center;
+  text-align: left;
+}
+
+#install .col-6{
+  padding: 5rem 1rem;
+}
+
+#install h1{
+  margin: 2rem auto;
+  font-size: 3rem;
+}
+
+#install p{
+  font-size: 1.5rem;
+}
+
+/* 3-ways */
+.ways-pic{
+  width:90%;
+}
+
+#three-ways{
+  text-align:center;
+}
+
+#three-ways h2{
+  font-size: 4rem;
+}
+
 
 /* footer */
 /*#footer {
