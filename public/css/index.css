@@ -107,6 +107,11 @@ font-size: 3rem;
   font-size: 1.5rem;
 }
 
+#install .card{
+  background-color: rgba(0,0,0,0.5);
+}
+
+
 /* 3-ways */
 .ways-pic{
   width:90%;
