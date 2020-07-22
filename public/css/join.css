@@ -109,6 +109,10 @@ div{
   padding: 1.25rem;
 }
 
+#photo{
+  width: 260px;
+  height: 27px;
+}
 
 .footer {
    left: 0;

@@ -131,9 +131,8 @@
       </select>
       <!-- <input type="submit" name="location"> -->
     </div>
-    <input type="text" name="about" class="form-control bottom" placeholder="About you (max 100 words) (Optional)">
-
-    
+    <textarea type="text" name="about" class="form-control bottom" placeholder="About you (max 100 words) 
+    (Optional)" rows="4"></textarea>    
     <br>
 
     <div class="box">
@@ -146,28 +145,28 @@
         //fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
       </script>
 
-    <br>
-    <br>
-<!-- Send file to firebase -->
-  <div id="target">You can also drag an image file here</div>
-  <br> 
-  <script>
-    const target = document.getElementById('target');
+      <br>
+      <br>
+      <!-- Send file to firebase -->
+      <div id="target">You can also drag an image file here</div>
+      <br> 
+      <script>
+        const target = document.getElementById('target');
 
-    target.addEventListener('drop', (e) => {
-      e.stopPropagation();
-      e.preventDefault();
+        target.addEventListener('drop', (e) => {
+          e.stopPropagation();
+          e.preventDefault();
 
-      doSomethingWithFiles(e.dataTransfer.files);
-    });
+          doSomethingWithFiles(e.dataTransfer.files);
+        });
 
-    target.addEventListener('dragover', (e) => {
-      e.stopPropagation();
-      e.preventDefault();
+        target.addEventListener('dragover', (e) => {
+          e.stopPropagation();
+          e.preventDefault();
 
-      e.dataTransfer.dropEffect = 'copy';
-    });
-  </script>
+          e.dataTransfer.dropEffect = 'copy';
+        });
+      </script>
   </div>
   <br>
   <br>
