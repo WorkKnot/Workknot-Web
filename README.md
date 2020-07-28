@@ -2,6 +2,8 @@
 
 This project is started with an idea to help local labourers get a job.
 
+![Jekyll site CI](https://github.com/WorkKnot/Workknot-Web/workflows/Jekyll%20site%20CI/badge.svg?branch=master)
+
 ## Our Motto
 
 WE BELIEVE, OUR PLATFORM IS A SMALL STEP IN CONTRIBUTING 
