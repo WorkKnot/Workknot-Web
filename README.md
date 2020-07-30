@@ -58,10 +58,12 @@ After getting the `.env` file,
 
 _This is recommended only for the users who are familier with Docker, if not use the above git method._
 
-You may get the docker image by running `docker pull ruwaliharshit/workknot-web`
+You may get the docker image by running `docker pull harshitruwali/workknot-web`<br>
+
+You may have to pull the git repo in the docker container to make sure that the changes are up to date. <br>
 
 For running the web at local host run 
-`docker run -it -d -p <outside-port-of-your-choice>:8000 ruwaliharshit/workknot-web`
+`docker run -it -d -p <outside-port-of-your-choice>:8000 harshitruwali/workknot-web`
 
 Now just for conformation that you have correct setup run `docker ps -a` <br>
 
