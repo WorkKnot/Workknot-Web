@@ -165,7 +165,7 @@ app.post('/', function(req, res){
 	catch (err){
 		// console.log('-----------------------------------------');
 		// console.log(err);
-		return db.collection('Query').doc(qemail).collection(query).set(qdata).then(() =>{
+		return db.collection('Query').doc(qemail).collection(query).doc(qname).set(qdata).then(() =>{
 			res.sendFile(__dirname + "/success-query.html");
 		})
 	}
